@@ -12,6 +12,23 @@
     background-size: cover;
     position: relative;
 }
+ul li ul.dropdown li{
+    display: block;
+
+}
+ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+/* ul li a:hover{
+    background: #f44336;
+} */
+ul li:hover ul.dropdown{
+    display: block;
+    justify-content: center;
+}
 nav{
     display: flex;
     padding: 2% 6%;
@@ -131,6 +148,9 @@ nav .bi{
 h1{
     font-size: 36px;
     font-weight: 600;
+}
+ul{
+    color: #777;
 }
 p{
     color: #777;
